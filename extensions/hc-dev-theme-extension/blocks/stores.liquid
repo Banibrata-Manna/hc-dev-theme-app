@@ -1,0 +1,61 @@
+{% assign store_name = block.settings.store_name %}
+{% assign store_address = block.settings.store_address %}
+{% assign store_timings = block.settings.store_timings %}
+
+{% if store_name or store_address or store_timings %}
+  <span>
+    {% render 'store', store_name: store_name, store_address: store_address, store_timings: store_timings %}
+  </span>
+{% endif %}
+
+<p>{{ 'store.name.label' | t }}: 
+  {% if store_name != blank %}
+    {{ store_name }}
+  {% else %}
+    {{ 'store.name.noName' | t }}
+  {% endif %}
+</p>
+
+<p>{{ 'store.address.label' | t }}: 
+  {% if store_address != blank %}
+    {{ store_address }}
+  {% else %}
+    {{ 'store.address.noAddress' | t }}
+  {% endif %}
+</p>
+
+<p>{{ 'store.timings.label' | t }}: 
+  {% if store_timings != blank %}
+    {{ store_timings }}
+  {% else %}
+    {{ 'store.timings.noTimings' | t }}
+  {% endif %}
+</p>
+{%  schema %}
+{
+  "name": "Store",
+  "target": "section",
+  "description": "Displays store information",
+  "icon": "store",
+  "settings": [
+    {
+      "type": "text",
+      "id": "store_name",
+      "label": "Store Name",
+      "default": "Demo Store"
+    },
+    {
+      "type": "text",
+      "id": "store_address",
+      "label": "Store Address",
+      "default": "Demo Address"
+    },
+    {
+      "type": "text",
+      "id": "store_timings",
+      "label": "Store Timings",
+      "default": "10 AM - 9 PM"
+    }
+  ]
+}
+{% endschema %}

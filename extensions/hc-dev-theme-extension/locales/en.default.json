@@ -1,13 +1,4 @@
 {
-  "ratings": {
-    "stars": {
-      "label": "Ratings",
-      "noRating": "No Rating"
-    },
-    "home": {
-      "recommendationText": "Recommended Product!"
-    }
-  },
   "button": {
     "submit": {
       "label": "Submit"

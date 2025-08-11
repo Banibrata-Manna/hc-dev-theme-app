@@ -1,0 +1,34 @@
+.store-name {
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+#store-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.store {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+#pickup-btn {
+    background-color: #0f8842;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+.store-actions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: end;
+    justify-content: center;
+}

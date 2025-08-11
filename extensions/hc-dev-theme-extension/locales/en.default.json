@@ -1,21 +1,10 @@
 {
-  "button": {
-    "submit": {
-      "label": "Submit"
-    }
-  },
-  "store": {
-    "name": {
-      "label": "Store Name",
-      "noName": "No name available"
+  "ratings": {
+    "stars": {
+      "label": "Ratings"
     },
-    "address": {
-      "label": "Store Address",
-      "noAddress": "No address available"
-    },
-    "timings": {
-      "label": "Store Timings",
-      "noTimings": "No timings available"
+    "home": {
+      "recommendationText": "Recommended Product!"
     }
   }
 }

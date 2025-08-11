@@ -17,3 +17,20 @@ export function getStores() {
         }
     ];
 }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var stores = getStores();
+//     var container = document.getElementById('store-list');
+//     if (container) {
+//         stores.forEach(function(store) {
+//             var html = `<div class="store">
+//                 <h3>${store.name}</h3>
+//                 <p>${store.address}</p>
+//                 <p>${store.timings}</p>
+//             </div>`;
+//             container.insertAdjacentHTML('beforeend', html);
+//         });
+//     }
+// });
+
+alert("Hello, World!");
